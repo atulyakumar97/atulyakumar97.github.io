@@ -504,16 +504,5 @@ footer {
 }
 
 #go-back-button {
-  opacity: 1;
-  font-family: "roboto mono";
-  outline: none;
-  background-color: var(--text-color);
-  color: var(--background-color);
-  position: relative;
-  top: -2em;
-  padding: 1em;
-  border: none;
-  display: none;
-  font-size: 0.8em;
-  text-align: center;
+  display: none
 }

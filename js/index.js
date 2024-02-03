@@ -168,9 +168,28 @@ displaySection("links","links-section");
 
 // Wait for the DOM to be fully loaded before triggering the click event
 document.addEventListener("DOMContentLoaded", function () {
-    // Call the displaySection function for "about-me" and store the click event handler
-    const aboutMeClickHandler = displaySection("about-me", "about-me-section");
 
-    // Trigger the click event programmatically to load the "about-me" section initially
-    aboutMeClickHandler(new Event('click'));
+    const mq = window.matchMedia("(max-width: 500px)");
+        if(mq.matches) {
+
+            let menu = document.querySelector("#menu");
+            menu.style.marginTop = "100px";
+            menu.style.display = "flex";
+            menu.style.position = "fixed";
+            menu.style.top = "30vw";
+            menu.style.transition = "All 1s";
+            menu.style.right = "0vw";
+            menu.style.left = "10vw";
+
+
+
+        } else {
+
+            // Call the displaySection function for "about-me" and store the click event handler
+            const aboutMeClickHandler = displaySection("about-me", "about-me-section");
+
+            // Trigger the click event programmatically to load the "about-me" section initially
+            aboutMeClickHandler(new Event('click'));
+
+        }
 });
