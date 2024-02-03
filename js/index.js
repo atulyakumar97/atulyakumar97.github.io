@@ -34,7 +34,7 @@ function displaySection(link, section) {
 
             });
             lnk.parentElement.style.display = "none";
-            if(section == "skills-section") {
+            if(section == "skills-section"  ) {
                 let div = document.querySelector(`#${section} > article`);
                 div.style.display = "flex";
                 div.style.flexDirection = "column";
@@ -43,7 +43,17 @@ function displaySection(link, section) {
                     se.style.fontFamily = "roboto mono";
                 }
 
-            } else if (section == "projects-section") {
+            } else if (section == "education-section"){
+                let div = document.querySelector(`#${section} > article`);
+                div.style.display = "flex";
+                div.style.flexDirection = "column";
+                let subElement = document.querySelectorAll(`#${section} li`);
+                for (se of subElement){
+                    se.style.fontFamily = "roboto mono";
+                }
+            }
+
+            else if (section == "projects-section") {
                 let s = document.querySelector("#projects-wrapper");
 
                 s.style.display = "flex";
@@ -162,6 +172,7 @@ function switchDarkLightMode() {
 
 switchDarkLightMode();
 displaySection("about-me","about-me-section");
+displaySection("education","education-section");
 displaySection("skills","skills-section");
 displaySection("projects","projects-section");
 displaySection("links","links-section");
