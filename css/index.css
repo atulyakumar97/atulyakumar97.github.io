@@ -162,6 +162,13 @@ section {
   z-index: -1000;
 }
 
+/* Adjust the text color and background for dark mode */
+.dark-mode .watermark {
+  color: #eee; /* Adjust text color for dark mode */
+  background-color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent background for dark mode */
+}
+
 #name {
   animation-name: name;
   font-weight: bold;
@@ -493,7 +500,7 @@ footer {
 }
 
 #go-back-button {
-  opacity: 0.8;
+  opacity: 1;
   font-family: "roboto mono";
   outline: none;
   background-color: var(--text-color);

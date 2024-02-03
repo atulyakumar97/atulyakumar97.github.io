@@ -10,16 +10,16 @@
     <script src="https://kit.fontawesome.com/ad9cb0368b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="images/z-icon.ico" type="image/x-icon">
-    <title>Ziyad</title>
+    <title>Atulya Kumar</title>
 </head>
 
 <body>
     <div>
-    <div class="watermark">ZEYAD</div>
-    <div class="watermark">ZEYAD</div>
-    <div class="watermark">ZEYAD</div>
+    <div class="watermark">ATULYA</div>
+    <div class="watermark">ATULYA</div>
+    <div class="watermark">ATULYA</div>
     <div id="header-name-ldm">
-        <h1 id="name">Zeyad</h1>
+        <h1 id="name">Atulya Kumar</h1>
         <span id="switch-ldm-logo">
             <div id="switch-container">
                 <img src="images/moon.svg" alt="">
@@ -28,12 +28,49 @@
         </span>
     </div>
 
-    <p id="slogan">Software engineer</p>
-    
+    <p id="slogan">Data Engineer</p>
+
+    <script>
+        // Array of job titles
+        var jobTitles = [
+            "Data Engineer",
+            "Data Scientist",
+            "Data Analyst",
+            "Machine Learning Engineer",
+            "Python Developer",
+            "ETL Developer",
+            "SWE - Data",
+            "AWS Developer"
+        ];
+
+        // Variable to store the last displayed job title
+        var lastJobTitle = "";
+
+        // Function to change job title randomly
+        function changeJobTitle() {
+            var randomIndex;
+
+            // Ensure the next randomly selected title is different from the last one
+            do {
+                randomIndex = Math.floor(Math.random() * jobTitles.length);
+            } while (jobTitles[randomIndex] === lastJobTitle);
+
+            // Update lastJobTitle
+            lastJobTitle = jobTitles[randomIndex];
+
+            // Update the displayed job title
+            document.getElementById("slogan").textContent = lastJobTitle;
+        }
+
+        // Change job title every 1 second
+        setInterval(changeJobTitle, 1500);
+    </script>
+
+
     <div id="go-back-button"> <i class="fas fa-chevron-left"></i> Menu</div>
     <section id="about-me-intro-section" class="section">
-        <p>Full Stack Web and Mobile Developer from Mauritania. I have a passion for creating seamless, beautiful and creative websites. I have experience with various programming languages and specifically web technologies. I am currently available to hire.<br></p>
-        <a href="mailto:ziyadkader@gmail.com"> Get in touch</a>
+        <p>Hello there! I am a seasoned Data Engineer with over 3 years of hands-on experience, specializing in various facets of the data ecosystem. My expertise lies in crafting robust data models, designing efficient data warehousing solutions, and seamlessly orchestrating ETL processes. My proficiency extends to the intersection of data engineering and machine learning, where I have successfully navigated the realm of MLOps, ensuring a smooth integration of machine learning models into production environments.</p>
+        <a href="mailto:atkumar@ucsd.edu"> Get in touch</a>
     </section>
     <!-- menu -->
     <header id="menu">
@@ -42,19 +79,19 @@
         <p id="projects"> <a href="">Projects</a> </p>
         <p id="links"> <a href="">Links</a> </p>
 
-    </header> 
+    </header>
     </div>
 
     <main>
 
     <!-- About me -->
-  
+
     <section id="about-me-section" class="section">
 			<h2>About me</h2>
 			<p>I am a Full Stack Web & mobile Developer from Mauritania. I have a passion for creating seamless, beautiful and creative websites. I have experience with various programming languages and specifically web technologies. Life is a continuous learning process, so work makes me more rigorous.<br>
 			<a href="mailto:ziyadkader@gmail.com">Hire me</a></p>
     </section>
-    
+
     <!-- Skills -->
     <section id="skills-section" class="section">
         <h2>Skills</h2>
