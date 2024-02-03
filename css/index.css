@@ -187,15 +187,19 @@ section {
 }
 
 #menu {
+  margin-top: 0px;
   display: flex;
+  position: fixed;
+  top: 1vw;
+  transition: All 1s;
+  right: 15vw;
   flex-direction: row;
   max-width: 50%;
-
   color: gray;
   animation-name: menu;
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
-  margin-top: 10em;
+
 }
 
 #menu a {
