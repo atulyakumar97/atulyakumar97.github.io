@@ -6,6 +6,61 @@ function displaySection(link, section) {
 
     // Function to handle the click event
     function handleLinkClick(event) {
+
+       // mobile js
+        const mq = window.matchMedia("(max-width: 500px)");
+        if(mq.matches) {
+            let menu = document.querySelector("#menu");
+            menu.style.marginTop = "100px";
+            menu.style.display = "flex";
+            menu.style.position = "fixed";
+            menu.style.top = "30vw";
+            menu.style.transition = "All 1s";
+            menu.style.right = "0vw";
+            menu.style.left = "10vw";
+
+            // show the go-back button when a link is clicked in responsive mode .
+            let goBackButton = document.querySelector("#go-back-button");
+            goBackButton.style.display = "block";
+
+            // when the go-back button is clicked , it disappears with the main and the menu should reappear .
+            goBackButton.addEventListener("click",() => {
+                // hide the mainSection
+                sec.style.display = "none";
+                let menu = document.querySelector("#menu");
+                menu.style.display = "flex";
+                goBackButton.style.display = "none";
+                lnk.classList.remove("active");
+
+            });
+            lnk.parentElement.style.display = "none";
+            if(section == "skills-section") {
+                let div = document.querySelector(`#${section} > article`);
+                div.style.display = "flex";
+                div.style.flexDirection = "column";
+                let subElement = document.querySelectorAll(`#${section} li`);
+                for (se of subElement){
+                    se.style.fontFamily = "roboto mono";
+                }
+
+            } else if (section == "projects-section") {
+                let s = document.querySelector("#projects-wrapper");
+
+                s.style.display = "flex";
+                s.style.flexDirection = "column";
+
+            } else if (section == "links-section") {
+                let linkWrapper = document.querySelector(`#${section} div`);
+                linkWrapper.style.display = "flex";
+                linkWrapper.style.flexDirection = "column";
+
+            }
+            sec.classList.remove("section");
+            sec.style.display = "block";
+            sec.style.animationName = "section-mobile";
+            sec.style.animationDuration = "1.2s";
+        }
+        else {
         // remove the section from sight
         for (elem of sec.parentElement.children) {
             elem.style.display = "none";
@@ -28,6 +83,7 @@ function displaySection(link, section) {
 
         event.preventDefault();
         lnk.classList.add("active");
+        }
 
         let jiran = lnk.parentElement.children;
         for (j of jiran) {
