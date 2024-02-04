@@ -14,7 +14,7 @@ function displaySection(link, section) {
             menu.style.marginTop = "100px";
             menu.style.display = "flex";
             menu.style.position = "fixed";
-            menu.style.top = "30vw";
+            menu.style.top = "45vw";
             menu.style.transition = "All 1s";
             menu.style.right = "0vw";
             menu.style.left = "10vw";
@@ -158,7 +158,7 @@ function switchDarkLightMode() {
         document.documentElement.classList.remove('dark-mode'); // Remove dark-mode class
     }
 
-    setDarkMode(); // Set dark mode by default
+    setLightMode(); // Set dark mode by default
 
     icon.onclick = () => {
         // Toggle between dark and light mode when the icon is clicked

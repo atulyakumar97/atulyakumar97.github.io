@@ -506,3 +506,16 @@ footer {
 #go-back-button {
   display: none
 }
+
+.education-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section {
+    order: -1; /* Set a negative order to move this section to the top */
+}
+
+.grayscale-image {
+    filter: grayscale(100%);
+}

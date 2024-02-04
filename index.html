@@ -30,7 +30,7 @@
         </span>
     </div>
 
-    <p id="slogan">Data Engineer</p>
+    <p id="slogan">Student</p>
 
     <script>
         // Array of job titles
@@ -42,7 +42,8 @@
             "Python Developer",
             "ETL Developer",
             "SWE - Data",
-            "AWS Developer"
+            "AWS Developer",
+            "Student"
         ];
 
         // Variable to store the last displayed job title
@@ -64,8 +65,8 @@
             document.getElementById("slogan").textContent = lastJobTitle;
         }
 
-        // Change job title every 1 second
-        setInterval(changeJobTitle, 1500);
+        // Change job title every 1.5 second
+        setInterval(changeJobTitle, 1250);
     </script>
 
         <div id="go-back-button"> <i class="fas fa-chevron-left"></i> Menu</div>
@@ -93,8 +94,8 @@
 
     <section id="education-section" class="section">
     <h2>Education</h2>
-        <article>
-            <section style="width: 1000px">
+        <article class="education-article">
+            <section style="width: 100%" class="first-section">
             <h2>University of California, San Diego (2023-)<img class="section-logos" src="./images/hdsi.png" style="width: 10%" align="right"><img class="section-logos" src="./images/ucsd.svg.png" style="width: 10%" align="right"></h2>
             <h3>Halıcıoğlu Data Science Institute (HDSI)</h3>
             <h3>Master's of Science - Data Science</h3> <br>
@@ -115,13 +116,11 @@
                 <li>DSC 241: Statistical Modelling, Dr. Armin Schwartzman</li>
             </ul>
         </section>
-        </article>
-        <article>
-            <section style="width: 1000px">
+            <section style="width: 100%" class="second-section">
 
                 <h2>University of Mumbai (2016-2020)<img class="section-logos" src="./images/djsanghvi.png" style="width: 10%" align="right"><img class="section-logos" src="./images/mumbaiuniversity.png" style="width: 10%" align="right"></h2>
                 <h2>Dwarkadas J. Sanghvi College of Engineering</h2>
-                <h3>Bachelor's of Engineering - Electronics and Telecommunication Engineering</h3> <br>
+                <h3>Bachelor's of Engineering - Electronics and Telecommunication</h3> <br>
                 <h3>Relevant Courses:</h3>
                 <ul>
                     <li>Image Processing and Machine Vision</li>
@@ -141,74 +140,83 @@
         <h2>Skills</h2>
         <article>
             <section>                                                                                                                               
-                <h4>Programmings languages <img class="section-logos" src="./images/programming.svg"></h4>
+                <h4>Programmings Languages <img class="section-logos" src="./images/programming.svg"></h4>
                 <ul>
                     <li skill-description="Python"><object type="image/svg+xml" data="images/python.svg"></object>Python</li>
+                    <li skill-description="R"><object type="image/png" data="images/R.png" class="grayscale-image"></object>R</li>
+                    <li skill-description="SQL"><object type="image/png" data="images/SQL.png" class="grayscale-image"></object>SQL</li>
                 </ul>
                 
             </section>
+
             <section>
-                <h4>Web Frontend<img class="section-logos" src="./images/frontend.svg"></h4>
+                <h4>Python Libraries<img class="section-logos" src="./images/tools.svg"></h4>
+<!--                NLTK, Keras, Tensorflow, Matplotlib, PyTorch, PySpark, Seaborn, Numpy, Scikit Learn-->
                 <ul>
-                    <li skill-description="HTML 5"><object type="image/svg+xml" data="images/html5.svg" class="svg-logos"></object>HTML</li>
-                    <li skill-description="CSS"><object type="image/svg+xml" data="images/css3.svg"></object>CSS</li>
-                    <li skill-description="Sass"><object type="image/svg+xml" data="images/react.svg"></object>React</li>
-                    <li skill-description="Bootstrap"><object type="image/svg+xml" data="images/bootstrap.svg"></object>Bootstrap</li>
-                    <li skill-description="JQuery"><object type="image/svg+xml" data="images/jquery.svg"></object>Jquery</li>
-                    <li skill-description="Sass"><object type="image/svg+xml" data="images/sass.svg"></object>Sass</li>
+                    <li  skill-description="NLTK"><object type="image/svg+xml" data="images/x.svg"></object>NLTK</li>
+                    <li  skill-description="Keras"><object type="image/svg+xml" data="images/x.svg"></object>Keras</li>
+                    <li  skill-description="Tensorflow"><object type="image/svg+xml" data="images/x.svg"></object>Tensorflow</li>
+                    <li  skill-description="Matplotlib"><object type="image/svg+xml" data="images/x.svg"></object>Matplotlib</li>
+                    <li  skill-description="Apache Airflow"><object type="image/svg+xml" data="images/x.svg"></object>Apache Airflow</li>
+                    <li  skill-description="Matplotlib"><object type="image/svg+xml" data="images/x.svg"></object>Matplotlib</li>
+                    <li  skill-description="PyTorch"><object type="image/svg+xml" data="images/x.svg"></object>PyTorch</li>
+                    <li  skill-description="PySpark"><object type="image/svg+xml" data="images/x.svg"></object>PySpark</li>
+                    <li  skill-description="Seaborn"><object type="image/svg+xml" data="images/x.svg"></object>Seaborn</li>
+                    <li  skill-description="Numpy"><object type="image/svg+xml" data="images/x.svg"></object>Numpy</li>
+
                 </ul>
-            </section> 
-            
-            <section>
-                <h4>Web Backend <img class="section-logos" src="./images/backend.svg"></h4>
-                <ul>
-                    <li skill-description="Node"> <li skill-description="Sass"><object type="image/svg+xml" data="images/node-dot-js.svg"></object>Node</li>
-                    <li skill-description="express"><object type="image/svg+xml" data="images/node-dot-js.svg"></object>Express</li>
-                    <li skill-description="Laravel"><object type="image/svg+xml" data="images/laravel.svg"></object>Laravel</li>
-                    <li skill-description="Django"><object type="image/svg+xml" data="images/django.svg"></object>Django</li>
-                    <li skill-description="Flask"><object type="image/svg+xml" data="images/flask.svg"></object>Flask</li>
-                </ul>
-                
             </section>
-            
+
             <section>
-                <h4>Mobile <img class="section-logos" src="./images/phone.svg"></h4>
+                <h4>Cloud (AWS)</h4>
                 <ul>
-                    <li  skill-description="react-native"><object type="image/svg+xml" data="images/react.svg"></object>React native</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>Lambda</</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>ECS</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>S3</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>RDS</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>Step Functions</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>SageMaker</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>Glue</li>
+                  <li><object type="image/svg+xml" data="images/x.svg"></object>LightSail</li>
                 </ul>
-            </section> 
-            
-            <section>
-                <h4>Desktop <img class="section-logos" src="./images/desktop.svg"></h4>
-                <ul>
-                    <li  skill-description="Electron"><object type="image/svg+xml" data="images/electron.svg"></object>Electron</li>
-                    <li  skill-description="Tkinter"><object type="image/svg+xml" data="images/python.svg"></object>Tkinter</li>
-                    <li  skill-description="JavaFx"><object type="image/svg+xml" data="images/java.svg"></object>JavaFx</li>
-                </ul>
-            </section> 
-            
+            </section>
+
             <section>
                 <h4>Databases<img class="section-logos" src="./images/database.svg"></h4>
                 <ul>
-                    <li  skill-description="Mysql"><object type="image/svg+xml" data="images/mysql.svg"></object>Mysql</li>
-                    <li  skill-description="mongodb"><object type="image/svg+xml" data="images/mongodb.svg"></object>Mongodb</li>
-                    <li  skill-description="Oracle"><object type="image/svg+xml" data="images/oracle.svg"></object>Oracle</li>
+                    <li  skill-description="snowflake"><object type="image/svg+xml" data="images/x.svg"></object>Snowflake</li>
+                    <li  skill-description="Mysql"><object type="image/svg+xml" data="images/x.svg"></object>Mysql</li>
+                    <li  skill-description="mongodb"><object type="image/svg+xml" data="images/x.svg"></object>Mongodb</li>
+                    <li  skill-description="DynamoDb"><object type="image/svg+xml" data="images/x.svg"></object>DynamoDb</li>
+                    <li  skill-description="PostgreSQL"><object type="image/svg+xml" data="images/x.svg"></object>PostgreSQL</li>
                 </ul>
             </section>
+
             <section>
-                <h4>Other tools <img class="section-logos" src="./images/tools.svg"></h4>
+                <h4>Data Stack<img class="section-logos" src="./images/tools.svg"></h4>
                 <ul>
-                    <li skill-description="Git"><object type="image/svg+xml" data="images/git.svg"></object>Git</li>
-                    <li skill-description="Github"><object type="image/svg+xml" data="images/github.svg"></object>Github</li>
-                    <li  skill-description="Visual Studio Code"><object type="image/svg+xml" data="images/visualstudiocode.svg"></object>VScode</li>
-                    <li  skill-description="Terminal"><object type="image/svg+xml" data="images/gnubash.svg"></object>Unix Shells (Bash/zsh)</li>
+                    <li  skill-description="Tableau"><object type="image/svg+xml" data="images/x.svg"></object>Tableau</li>
+                    <li  skill-description="Apache Kafka"><object type="image/svg+xml" data="images/x.svg"></object>Apache Kafka</li>
+                    <li  skill-description="Apache Spark"><object type="image/svg+xml" data="images/x.svg"></object>Apache Spark</li>
+                    <li  skill-description="Apache Airflow"><object type="image/svg+xml" data="images/x.svg"></object>Apache Airflow</li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h4>Other Tools<img class="section-logos" src="./images/tools.svg"></h4>
+                <ul>
+                    <li  skill-description="Docker"><object type="image/svg+xml" data="images/x.svg"></object>Docker</li>
+                    <li skill-description="Git"><object type="image/svg+xml" data="images/x.svg"></object>Git</li>
+                    <li skill-description="Github"><object type="image/svg+xml" data="images/x.svg"></object>Github</li>
+                    <li skill-description="DataDog"><object type="image/svg+xml" data="images/x.svg"></object>DataDog</li>
                 </ul>
             </section>
             <section>
                 <h4>Human languages <img class="section-logos" src="./images/languages.svg"></h4>
                 <ul>
-                    <li>English</li>
-                    <li>Hindi</li>
+                    <li><object type="image/svg+xml" data="images/x.svg"></object>English</li>
+                    <li><object type="image/svg+xml" data="images/x.svg"></object>Hindi</li>
                 </ul>
             </section>
         </article>
@@ -220,42 +228,20 @@
         <div id="projects-wrapper">
         <div>
             <div>
-            <h3> 
-                <a href="https://kaytouki.com" target="_blank">Kaytouki.com</a>
+            <h3>
+                <a href="https://atulyakumar97.github.io" target="_blank">Coming Soon!</a>
                 <br>
-                <em> - Carpooling website</em>   
-            </h3>        
-           
-            <div class="tags">
-                <span>PHP</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Mysql</span>
-            </div>
-            </div>
-            <img src="images/kaytouki.png" alt="">
-      
-        </div>
-        <div>
-            <div>
-            <h3> <a href="https://logorain.com" target="_blank">Logorain.com </a>
-                <br>
-                <em>- Logos Generator</em>
+                <em></em>
             </h3>
-           
+
             <div class="tags">
                 <span>Python</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Django</span>
-                <span>Javascript</span>
+                <span>AWS</span>
             </div>
             </div>
-            <img src="images/logorain.png" alt="">
-         
-        </div>
+            <img src="images/comingsoon.jpg" alt="" width="100%">
 
+        </div>
         </div>
     </section>
 
@@ -273,8 +259,8 @@
             <a href="https://github.com/atulyakumar97" description="Github"><i class="fab fa-github"></i>
                 GitHub</a>
 
-            <a href="https://www.kaggle.com/atulyakumar98" description="Kaggle"><i class="fa-brands fa-kaggle"></i>
-                    Kaggle</a>
+<!--            <a href="https://www.kaggle.com/atulyakumar98" description="Kaggle"><i class="fa-brands fa-kaggle"></i>-->
+<!--                    Kaggle</a>-->
 
             <a href="https://www.linkedin.com/in/atulyakumar" description="Linkedin"><i class="fab fa-linkedin-in"> </i>
                 LinkedIn</a>
